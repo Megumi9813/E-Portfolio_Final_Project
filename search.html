@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/f50fc78627.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sommovie</title>
+  </head>
+  <body>
+    <header class="search_header">
+      <nav class="header_nav row">
+        <div class="header_logo">
+          <i class="fa-solid fa-video"></i>
+          <div class="logo">Sommovie</div>
+        </div>
+        <ul class="header_links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Find your movie</a></li>
+          <li><a href="" class="btn_contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="content_wrapper">
+        <h1>Browse our Movies</h1>
+        <div class="input_wrapper">
+          <input
+            type="text"
+            placeholder="Search by Title, Cast or Keyword"
+            id="searchBar"
+          />
+          <div class="search_btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
+    <section id="search" class="row">
+      <div class="progress_bar"></div>
+      <div class="filter">
+        <h2 class="search-info">
+          <span>Search results:</span>
+        </h2>
+      </div>
+      <ul id="moviesList"></ul>
+      <!-- <div class="movie_list data-movie-container"></div>
+      <template class="data-movie-template">
+        <div class="movie">
+          <div class="movie-card_info">
+            <h3 class="title" data-title></h3>
+            <p class="released" data-release>Released:</p>
+            <p class="rate" data-rate>Rated: <span></span><span>/</span></p>
+          </div>
+        </div>
+      </template> -->
+    </section>
+    <script src="./search.js"></script>
+    <script src="./movie.js"></script>
+  </body>
+</html>
